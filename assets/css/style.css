@@ -1,3 +1,19 @@
 .smaller {
     font-size: 0.7em;
 }
+
+#myinfo {
+    width: 75%;
+}
+
+#gatech {
+    padding-top: .2em;
+    height: 200px;
+    display: flex;
+}
+
+@media only screen and (max-width: 400px){
+    #gatech {
+        height: 100px;
+    }
+}
