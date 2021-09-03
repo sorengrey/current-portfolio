@@ -6,6 +6,10 @@
     width: 75%;
 }
 
+#work {
+    background-color: rgb(245, 231, 231);
+}
+
 #gatech {
     padding-top: .2em;
     height: 200px;
