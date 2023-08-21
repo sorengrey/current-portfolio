@@ -6,4 +6,4 @@ Welcome! This website was created to showcase my favorite coding projects.<br>
 <br>
 Some of the projects are from Georgia Tech's Full Stack Flex Bootcamp, others are from Frontend Mentor, and there are a few sprinkled in that I did for fun.<br>
 <br>
-I am currently looking for my first job as a frontend developer. I am proficient in HTML, CSS, JS, Node.js, React, and more.
+I am currently a frontend dev for [Excelerate America](http://www.excelerateamerica.com/), a group-purchasing website for small businesses.
