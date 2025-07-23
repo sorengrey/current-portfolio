@@ -1545,6 +1545,50 @@ input, select, textarea {
 
 		}
 
+/* Modal */
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 1.5em;
+  max-width: 600px;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+.modal p {
+	margin-top: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 1.2em;
+  right: 1.5em;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
 /* Image */
 
 	.image {
@@ -1560,8 +1604,10 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			max-height: 170px;
+			min-height: 170px;
 			object-fit: cover;
 			overflow: hidden;
+			background: #FFFFFF;
 			border-radius: 10px;
 			border: 1px solid #b0b0b0;
 		}
@@ -2144,6 +2190,31 @@ input, select, textarea {
 						}
 
 				}
+
+.smaller {
+    font-size: 0.7em;
+}
+
+#myinfo {
+    width: 75%;
+}
+
+#work {
+    background-color: rgb(255, 246, 246);
+}
+
+#gatech {
+    padding-top: .2em;
+    height: 200px;
+    display: flex;
+}
+
+@media only screen and (max-width: 400px){
+    #gatech {
+        height: 100px;
+    }
+}
+
 
 /* Footer */
 
