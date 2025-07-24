@@ -1576,6 +1576,8 @@ input, select, textarea {
 
 .modal p {
 	margin-top: 1em;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .close {
