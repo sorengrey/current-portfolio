@@ -1606,7 +1606,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			max-height: 160px;
+			max-height: 170px;
 			max-width: 300px;
 			object-fit: contain;
 			overflow: hidden;
