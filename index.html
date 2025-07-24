@@ -86,6 +86,7 @@
                   data-title="Excelerate America"
                   data-desc="Built with React, JavaScript, TypeScript, Next.js, and ChakraUI. I worked on a remote dev team to create the new and improved Excelerate America website. I was responsible for building and styling the components nearly every page uses, building pages, bug fixes, and integration into our CMS, Hygraph."
                   data-full="images/excelerate.png"
+                  data-link="https://www.excelerateamerica.com/"
                   ><img
                     src="images/excelerate.png"
                     alt="screenshot of excelerate america's homepage"
@@ -99,6 +100,7 @@
                   data-title="Bento Grid"
                   data-desc="Built as a challenge from Frontend Mentor, this project uses HTML and CSS to create a bento grid layout. It is fully responsive and features several layouts based on screen size."
                   data-full="images/bento.png"
+                  data-link="https://sorengrey.github.io/FM-Bento-Grid/"
                   ><img
                     src="images/bento.png"
                     alt="screenshot of bento grid layout"
@@ -111,6 +113,7 @@
                   data-title="Social Proof"
                   data-desc="Built as a challenge from Frontend Mentor, this project uses HTML and CSS to create a mockup of a social media testimonal page. It is fully responsive and features a mobile-first design."
                   data-full="images/social-proof.png"
+                  data-link="https://sorengrey.github.io/social-proof-section/"
                   ><img
                     src="images/social-proof.png"
                     alt="social proof section"
@@ -123,6 +126,7 @@
                   data-title="Pod Request Landing Page"
                   data-desc="Built as a challenge from Frontend Mentor, this project uses HTML and CSS to create a mockup of a social media testimonal page. It is fully responsive and features a mobile-first design."
                   data-full="images/pod-request.png"
+                  data-link="https://sorengrey.github.io/pod-request-access-landing-page/"
                   ><img src="images/pod-request.png" alt="pod request"
                 /></a>
               </div>
@@ -133,6 +137,7 @@
                   data-title="Meet Landing Page"
                   data-desc="Built as a challenge from Frontend Mentor, this project uses HTML and CSS to create a mockup of a social media testimonal page. It is fully responsive and features a mobile-first design."
                   data-full="images/meet-landing.png"
+                  data-link="https://sorengrey.github.io/meet-landing-page/"
                   ><img src="images/meet-landing.png" alt="meet-landing-page"
                 /></a>
               </div>
@@ -143,6 +148,7 @@
                   data-title="3 Column Preview Cards"
                   data-desc="Built as a challenge from Frontend Mentor, this project uses HTML and CSS to a column of three cards. It is fully responsive and features a mobile-first design."
                   data-full="images/preview-cards.png"
+                  data-link="https://sorengrey.github.io/3-column-preview-cards/"
                   ><img src="images/preview-cards.png" alt="preview cards"
                 /></a>
               </div>
@@ -153,6 +159,7 @@
                   data-title="Order Summary Component"
                   data-desc="A simple order summary component built as a challenge from Frontend Mentor. It uses HTML and CSS to create a responsive design that looks great on all devices."
                   data-full="images/order-summary.png"
+                  data-link="https://sorengrey.github.io/order-summary-component/"
                   ><img src="images/order-summary.png" alt="order summary"
                 /></a>
               </div>
@@ -163,6 +170,7 @@
                   data-title="Article Preview Component"
                   data-desc="A simple article preview component built as a challenge from Frontend Mentor using HTML, CSS, and JavaScript. It can be used as a template for a blog post or article page."
                   data-full="images/article-preview.png"
+                  data-link="https://sorengrey.github.io/article-preview-component/"
                   ><img src="images/article-preview.png" alt="article preview"
                 /></a>
               </div>
@@ -173,6 +181,7 @@
                   data-title="Base Apparel Coming Soon Page"
                   data-desc="A single page coming soon layout built as a challenge from Frontend Mentor. It uses HTML, CSS, JavaScript, and a bit of jQuery to create a responsive design and an email sign-up form that validates user input."
                   data-full="images/coming-soon.png"
+                  data-link="https://sorengrey.github.io/base-apparel-coming-soon-page/"
                   ><img src="images/coming-soon.png" alt="coming soon page"
                 /></a>
               </div>
@@ -183,6 +192,7 @@
                   data-title="Profile Card Component"
                   data-desc="Built as a challenge from Frontend Mentor, this is a simple profile card component. It could be used as a template for a user profile page."
                   data-full="images/profile-card.png"
+                  data-link="https://sorengrey.github.io/profile-card-component/"
                   ><img
                     src="images/profile-card.png"
                     alt="profile card component"
@@ -217,7 +227,9 @@
       <div id="projectModal" class="modal">
         <div class="modal-content">
           <span class="close">&times;</span>
-          <img id="modal-img" src="" alt="" />
+          <a id="modal-link" href="#" target="_blank">
+            <img id="modal-img" src="" alt="" />
+          </a>
           <h2 id="modal-title"></h2>
           <p id="modal-desc"></p>
         </div>
@@ -240,6 +252,7 @@
       const imgEl = document.getElementById("modal-img");
       const titleEl = document.getElementById("modal-title");
       const descEl = document.getElementById("modal-desc");
+      const linkEl = document.getElementById("modal-link");
 
       document.querySelectorAll("a.image.fit").forEach((link) => {
         link.addEventListener("click", (e) => {
@@ -249,10 +262,12 @@
           const imgSrc = link.dataset.full;
           const title = link.dataset.title;
           const desc = link.dataset.desc;
+          const projectLink = link.dataset.link;
 
           imgEl.src = imgSrc;
           titleEl.textContent = title;
           descEl.textContent = desc;
+          linkEl.href = projectLink;
           modal.style.display = "block";
         });
       });
