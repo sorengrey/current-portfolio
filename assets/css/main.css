@@ -1606,11 +1606,10 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			max-height: 170px;
-			min-height: 170px;
-			object-fit: cover;
+			max-height: 160px;
+			max-width: 300px;
+			object-fit: contain;
 			overflow: hidden;
-			background: #FFFFFF;
 			border-radius: 10px;
 			border: 1px solid #b0b0b0;
 		}
